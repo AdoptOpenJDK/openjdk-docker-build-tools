@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-FROM adoptopenjdk/openjdk8:latest
+FROM adoptopenjdk/openjdk11:latest
 
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
 

@@ -15,7 +15,7 @@
 set -o pipefail
 
 root_dir="$PWD"
-source_prefix="dinogun"
+source_prefix="adoptopenjdk"
 source_repo="openjdk"
 version="9"
 tag_aliases=""

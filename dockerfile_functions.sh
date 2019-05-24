@@ -78,9 +78,9 @@ print_base_java() {
 print_maven() {
 	cat >> $1 <<'EOI'
 
-ARG MAVEN_VERSION="3.6.0"
+ARG MAVEN_VERSION="3.6.1"
 ARG USER_HOME_DIR="/root"
-ARG SHA="6a1b346af36a1f1a491c1c1a141667c5de69b42e6611d3687df26868bc0f4637"
+ARG SHA="2528c35a99c30f8940cc599ba15d34359d58bec57af58c1075519b8cd33b69e7"
 ARG BASE_URL="https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries"
 
 RUN mkdir -p /usr/share/maven \

@@ -31,7 +31,7 @@ all_arches="aarch64 ppc64le s390x x86_64"
 all_tools="maven"
 
 # Current JVM versions supported
-export supported_versions="8 9 10 11"
+export supported_versions="8 11 12"
 
 # Current builds supported
 export supported_builds="releases nightly"
@@ -42,7 +42,7 @@ target_repo="adoptopenjdk"
 function check_version() {
 	version=$1
 	case ${version} in
-	8|9|10|11)
+	8|9|10|11|12)
 		;;
 	*)
 		echo "ERROR: Invalid version"

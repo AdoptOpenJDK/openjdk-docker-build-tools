@@ -78,9 +78,9 @@ print_base_java() {
 print_maven() {
 	cat >> $1 <<'EOI'
 
-ARG MAVEN_VERSION="3.6.1"
+ARG MAVEN_VERSION="3.6.2"
 ARG USER_HOME_DIR="/root"
-ARG SHA="2528c35a99c30f8940cc599ba15d34359d58bec57af58c1075519b8cd33b69e7"
+ARG SHA="3fbc92d1961482d6fbd57fbf3dd6d27a4de70778528ee3fb44aa7d27eb32dfdc"
 ARG BASE_URL="https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries"
 
 RUN mkdir -p /usr/share/maven \
@@ -125,7 +125,7 @@ function create_build_tool_dockerfiles() {
 	# Get the tag alias to generate the build tools Dockerfiles
 	build_tags ${vm} ${os} ${build} ${btype}
 	# build_tags populates the array tag_aliases, but we just need the first element
-	# The first element corresponds to the tag alias			
+	# The first element corresponds to the tag alias
 	tags_arr=(${tag_aliases});
 	tag_alias=${tags_arr[0]};
 
